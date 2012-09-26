@@ -50,7 +50,6 @@ VirtualBox\ VMs
 .subversion
 .subversion_IDEA
 .vim/.netrwhist
-.vim/bundle
 .viminfo
 .weechat
 .zcompdump
