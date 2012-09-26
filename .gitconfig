@@ -1,0 +1,35 @@
+[user]
+	email = djlee@spotify.com
+	name = DJ Lee
+[core]
+	autocrlf = input
+	safecrlf = true
+	trustctime = false
+[diff]
+	tool = vimdiff
+[merge]
+    tool = vimdiff
+[url "djlee@git.spotify.net"]
+  insteadof = git@git.spotify.net
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  hist = log --pretty=format:\"%C(yellow)%h %Cgreen%ad %C(bold blue)%ae%Creset %s%C(red)%d%Creset\" --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
+  graph = log --graph --full-history --all --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"
+	d = difftool
+[branch]
+	autosetuprebase = always
+[difftool]
+	prompt = false
+[difftool "vimdiff"]
+	path = /usr/bin/vimdiff
+[color]
+	diff = auto
+	interactive = auto
+	status = auto
+[rerere]
+	enabled = 1
