@@ -30,6 +30,9 @@ shopt -s cdspell
 #    ;;
 #esac
 
+if [ -f /etc/bash_completion.d/git ] ; then
+    . /etc/bash_completion.d/git
+fi
 if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
     . /usr/local/etc/bash_completion.d/git-completion.bash
 fi

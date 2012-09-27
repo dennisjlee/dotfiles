@@ -5,6 +5,7 @@
 	autocrlf = input
 	safecrlf = true
 	trustctime = false
+	editor = vim
 [diff]
 	tool = vimdiff
 [merge]
