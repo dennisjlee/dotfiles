@@ -20,12 +20,17 @@ alias log='git log'
 alias pull='git pull'
 alias show='git show'
 
+alias bn='(cd buildn; ninja Spotify)'
+
 alias ssh="ssh -AXY"
 alias sshin="ssh icenine@icenine2"
+alias ssha="ssh appstore-admin.spotify.net"
+alias sshj="ssh jill.int.sto.spotify.net"
 alias sshh="ssh hunter.int.sto.spotify.net"
 alias sshu="ssh ursula.int.sto.spotify.net"
 alias sshr="ssh rabi.ash.spotify.net"
-alias sshn="ssh social.neville.ash.d.spotify.net"
+alias sshn="ssh socialgraph.neville.ash.d.spotify.net"
+#alias sshn="ssh social.neville.ash.d.spotify.net"
 alias sshs="ssh screen.d.spotify.net"
 alias sshp="ssh play.djlee.ash.d.spotify.net"
 

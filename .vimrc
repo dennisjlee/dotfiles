@@ -26,6 +26,7 @@ noremap <C-Q> :wq<CR>
 noremap <S-C-Q> :q!<CR>
 nmap <C-\> :sp<CR><C-]>
 noremap gs :sp<CR>gf
+noremap gv :vs<CR>gf
 
 " default is to open help, which is annoying (close to the escape key =)
 " now no-op
@@ -261,3 +262,5 @@ set background=dark
 let g:solarized_termcolors = 256
 let g:solarized_termtrans = 1
 colorscheme solarized
+
+set noequalalways " splitting windows shouldn't bounce

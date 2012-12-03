@@ -90,3 +90,9 @@ if which brew; then
         . `brew --prefix`/etc/autojump
     fi
 fi
+
+# For ninja to work better
+export CC=clang
+export CXX=clang++
+#export CC_COMPILER=clang
+#export CXX_COMPILER=clang++
