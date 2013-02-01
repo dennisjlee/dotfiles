@@ -7,9 +7,9 @@
 	trustctime = false
 	editor = vim
 [diff]
-	tool = vimdiff
+	tool = gvimdiff
 [merge]
-    tool = vimdiff
+	tool = gvimdiff
 	summary = true
 	conflictstyle = diff3
 [url "djlee@git.spotify.net"]

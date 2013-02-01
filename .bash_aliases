@@ -33,6 +33,7 @@ alias sshn="ssh socialgraph.neville.ash.d.spotify.net"
 #alias sshn="ssh social.neville.ash.d.spotify.net"
 alias sshs="ssh screen.d.spotify.net"
 alias sshp="ssh play.djlee.ash.d.spotify.net"
+alias sshdev="ssh ash1-devadmin-a1.ash.spotify.net"
 
 alias val="vim ~/.bash_aliases"
 alias sal="source ~/.bash_aliases"
