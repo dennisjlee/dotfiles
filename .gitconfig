@@ -38,3 +38,5 @@
 	enabled = 1
 [rebase]
 	autosquash = true
+[push]
+	default = simple
