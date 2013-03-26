@@ -252,3 +252,5 @@ let g:solarized_termtrans = 1
 colorscheme solarized
 
 set noequalalways " splitting windows shouldn't bounce
+
+map <C-n> :NERDTreeToggle<CR>
