@@ -1,6 +1,6 @@
 source ~/.bashrc
 
-export PATH=$HOME/bin:/usr/local/bin:/usr/local/share/python:$PATH:/Users/djlee/work/depot_tools:/usr/local/Cellar/ruby/1.9.3-p125/bin
+export PATH=$HOME/bin:/usr/local/bin:/usr/local/share/python:$PATH
 
 export LSCOLORS=Exfxcxdxbxegedabagacad
 

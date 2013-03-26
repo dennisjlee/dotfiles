@@ -232,18 +232,6 @@ function! <SID>StripTrailingWhitespace()
 endfunction
 nmap <silent> <Leader><space> :call <SID>StripTrailingWhitespace()<CR>
 
-
-function! InstallClientShortcuts()
-    let cwd = getcwd()
-    if strpart(cwd, 1 + strridx(cwd, "/")) != "client"
-      return
-    endif
-    set makeprg=/Users/djlee/bin/buildClient
-endfunction
-
-
-call InstallClientShortcuts()
-
 call pathogen#infect()
 
 " highlight tabs and trailing whitespace
