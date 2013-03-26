@@ -1,6 +1,7 @@
 # Coding
 dev
 src
+work
 
 # Common
 Applications
@@ -16,6 +17,7 @@ PycharmProjects
 Sites
 Videos
 VirtualBox\ VMs
+dotfiles.git
 .VirtualBox
 
 # Unix
