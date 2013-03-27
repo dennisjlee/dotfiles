@@ -65,8 +65,8 @@ function set_prompt() {
 
 set_prompt
 
-alias hold_title="set_prompt --no-dynamic"
-alias set_title="set_prompt --no-dynamic $*"
+alias hold_title='set_prompt --no-dynamic'
+alias set_title='set_prompt --no-dynamic $*'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like

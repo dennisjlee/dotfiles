@@ -16,7 +16,7 @@ set tags=./tags,tags
 set title
 
 set expandtab
-set tabstop=4 shiftwidth=4
+set tabstop=2 shiftwidth=2
 
 
 " save/quit commands
@@ -116,10 +116,10 @@ set textwidth=80 " break lines at 80 chars
 set nowrap
 set ruler showmatch smartindent autoindent
 "set cindent
-set scrolloff=1 backspace=2 shiftwidth=4
+set scrolloff=1 backspace=2
 set whichwrap=<,>,[,],h,l
 set list
-set listchars=tab:\ \ 
+set listchars=tab:\ \ ,trail:·
 set mouse=a
 set fileformat=unix
 set cinkeys=0{,0},:,!^F,o,O,e
