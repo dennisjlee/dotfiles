@@ -147,9 +147,6 @@ au BufNewFile,BufRead *Make* set noexpandtab
 " In perl, don't expand tabs.
 au BufNewFile,BufRead *.pl set noexpandtab
 
-" Style for ruby files in tinker.io
-au BufNewFile,BufRead *.rb set noexpandtab
-
 " On text files, don't expand tabs or do auto C indenting
 au BufNewFile,BufRead *.txt set noexpandtab nocindent
 
