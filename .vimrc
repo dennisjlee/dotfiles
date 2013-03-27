@@ -251,3 +251,9 @@ colorscheme solarized
 set noequalalways " splitting windows shouldn't bounce
 
 map <C-n> :NERDTreeToggle<CR>
+map ,n :NERDTreeFind<CR>
+
+augroup myvimrc
+    au!
+    au BufWritePost .vimrc,_vimrc,vimrc so $MYVIMRC
+augroup END
