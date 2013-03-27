@@ -96,3 +96,7 @@ export CC=clang
 export CXX=clang++
 #export CC_COMPILER=clang
 #export CXX_COMPILER=clang++
+
+# Flatiron stuff
+export FI_PACKAGES_HOST=packages.flatiron.com
+export FI_PACKAGES_PORT=80
