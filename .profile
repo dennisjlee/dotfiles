@@ -9,8 +9,9 @@ export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
 # {{{
 # Node Completion - Auto-generated, do not touch.
 shopt -s progcomp
-for f in $(command ls ~/.node-completion); do
-  f="$HOME/.node-completion/$f"
-  test -f "$f" && . "$f"
-done
+if [ -d ~/.node-completion ] ; then
+  for f in ~/.node-completion/*; do
+    test -f "$f" && . "$f"
+  done
+fi
 # }}}
