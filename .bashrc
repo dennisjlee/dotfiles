@@ -86,8 +86,8 @@ if [ -f /etc/bash_completion ]; then
 fi
 
 if which brew >/dev/null; then
-    if [ -f `brew --prefix`/etc/autojump ]; then
-        . `brew --prefix`/etc/autojump
+    if [ -f `brew --prefix`/etc/autojump.bash ]; then
+        . `brew --prefix`/etc/autojump.bash
     fi
 fi
 
