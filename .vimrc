@@ -1,7 +1,7 @@
 syntax enable 
 set number 
 
-autocmd FileType html :set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType python set omnifunc=pythoncomplete#Complete ts=4 sw=4
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS ts=2 sw=2 smartindent
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
@@ -252,6 +252,8 @@ set noequalalways " splitting windows shouldn't bounce
 
 map <C-n> :NERDTreeToggle<CR>
 map ,n :NERDTreeFind<CR>
+let NERDTreeIgnore = ['\.pyc$']
+set wildignore+=*.pyc
 
 augroup myvimrc
     au!

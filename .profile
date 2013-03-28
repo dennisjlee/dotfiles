@@ -1,6 +1,6 @@
 source ~/.bashrc
 
-export PATH=$HOME/bin:/usr/local/bin:/usr/local/share/python:$PATH
+export PATH=$HOME/bin:/usr/local/bin:/usr/local/share/python:/usr/local/share/npm/bin:$PATH
 
 export EDITOR=vim
 
