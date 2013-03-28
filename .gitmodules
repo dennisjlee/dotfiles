@@ -31,3 +31,6 @@
 [submodule ".vim/bundle/command-t"]
 	path = .vim/bundle/command-t
 	url = git://git.wincent.com/command-t.git
+[submodule ".vim/bundle/jinja-vim"]
+	path = .vim/bundle/jinja-vim
+	url = git@github.com:dennisjlee/jinja-vim.git

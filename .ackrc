@@ -1,1 +1,2 @@
 --type-set=cmake=.cmake
+--type-set=jinja=.jinja
