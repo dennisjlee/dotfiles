@@ -1,11 +1,11 @@
 [user]
-	email = djlee@spotify.com
+	email = dj@flatiron.com
 	name = DJ Lee
 [core]
 	autocrlf = input
-	safecrlf = true
 	trustctime = false
 	editor = vim
+	excludesfile = ~/.gitignore_global
 [diff]
 	tool = gvimdiff
 [merge]
