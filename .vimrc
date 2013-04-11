@@ -1,5 +1,7 @@
 syntax enable 
 set number 
+set expandtab
+set tabstop=2 shiftwidth=2
 
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType python set omnifunc=pythoncomplete#Complete ts=4 sw=4
@@ -14,9 +16,6 @@ set tagstack
 set tagrelative
 set tags=./tags,tags
 set title
-
-set expandtab
-set tabstop=2 shiftwidth=2
 
 
 " save/quit commands
@@ -135,9 +134,6 @@ set guifont=Menlo-Regular:h12
 " On LaTeX files don't use indenting.
 au BufNewFile,BufRead *.tex set noautoindent nosmartindent nocindent
 
-" On HTML files don't use indenting.
-au BufNewFile,BufRead *.html set noautoindent nosmartindent nocindent
-
 " JsUnit tests
 au BufNewFile,BufRead *_test.html,*_test_template.html set syn=javascript
 
@@ -252,7 +248,7 @@ set noequalalways " splitting windows shouldn't bounce
 
 map <C-n> :NERDTreeToggle<CR>
 map ,n :NERDTreeFind<CR>
-let NERDTreeIgnore = ['\.pyc$']
+let NERDTreeIgnore = ['\.pyc$', '\.swp$']
 set wildignore+=*.pyc
 
 augroup myvimrc
