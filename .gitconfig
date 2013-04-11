@@ -1,17 +1,19 @@
+[include]
+  # Put user.email in here
+  path = ~/.git_include
 [user]
-	email = dj@flatiron.com
-	name = DJ Lee
+  name = DJ Lee
 [core]
-	autocrlf = input
-	trustctime = false
-	editor = vim
-	excludesfile = ~/.gitignore_global
+  autocrlf = input
+  trustctime = false
+  editor = vim
+  excludesfile = ~/.gitignore_global
 [diff]
-	tool = gvimdiff
+  tool = gvimdiff
 [merge]
-	tool = gvimdiff
-	summary = true
-	conflictstyle = diff3
+  tool = gvimdiff
+  summary = true
+  conflictstyle = diff3
 [url "djlee@git.spotify.net"]
   insteadof = git@git.spotify.net
 [alias]
@@ -23,20 +25,20 @@
   type = cat-file -t
   dump = cat-file -p
   graph = log --graph --full-history --all --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"
-	d = difftool
+  d = difftool
 [branch]
-	autosetuprebase = always
+  autosetuprebase = always
 [difftool]
-	prompt = false
+  prompt = false
 [difftool "vimdiff"]
-	path = /usr/bin/vimdiff
+  path = /usr/bin/vimdiff
 [color]
-	diff = auto
-	interactive = auto
-	status = auto
+  diff = auto
+  interactive = auto
+  status = auto
 [rerere]
-	enabled = 1
+  enabled = 1
 [rebase]
-	autosquash = true
+  autosquash = true
 [push]
-	default = simple
+  default = simple
