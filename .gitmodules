@@ -34,3 +34,6 @@
 [submodule ".vim/bundle/jinja-vim"]
 	path = .vim/bundle/jinja-vim
 	url = git@github.com:dennisjlee/jinja-vim.git
+[submodule ".vim/bundle/vim-eunuch"]
+	path = .vim/bundle/vim-eunuch
+	url = git://github.com/tpope/vim-eunuch.git
