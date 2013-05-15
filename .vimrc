@@ -5,7 +5,7 @@ set tabstop=2 shiftwidth=2
 
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType python set omnifunc=pythoncomplete#Complete ts=4 sw=4
-autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS ts=2 sw=2 smartindent
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS ts=2 sw=2 smartindent expandtab
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
@@ -249,7 +249,7 @@ set noequalalways " splitting windows shouldn't bounce
 map <C-n> :NERDTreeToggle<CR>
 map ,n :NERDTreeFind<CR>
 let NERDTreeIgnore = ['\.pyc$', '\.swp$']
-set wildignore+=*.pyc
+set wildignore+=*.pyc,dist/**,node_modules/**,components/**
 
 augroup myvimrc
     au!

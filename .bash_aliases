@@ -47,3 +47,5 @@ alias ducks='find . -maxdepth 1 -mindepth 1 -print0 | xargs -0i du -ks {} | sort
 unset IS_MAC
 
 alias dotgit="GIT_DIR=$HOME/dotfiles.git GIT_WORK_TREE=$HOME git"
+
+alias nose="FH_SETTINGS_FILE=$HOME/nosetests.cfg scripts/nosetests.py"
