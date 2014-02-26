@@ -100,3 +100,7 @@ export CXX=clang++
 # Flatiron stuff
 export FI_PACKAGES_HOST=packages.flatiron.com
 export FI_PACKAGES_PORT=80
+
+# TODO: fix python path bs
+#export WORKON_HOME=~/envs
+#source /usr/local/bin/virtualenvwrapper.sh

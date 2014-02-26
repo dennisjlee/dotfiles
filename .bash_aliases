@@ -47,5 +47,8 @@ alias ducks='find . -maxdepth 1 -mindepth 1 -print0 | xargs -0 -- du -ks  | sort
 unset IS_MAC
 
 alias dotgit="GIT_DIR=$HOME/dotfiles.git GIT_WORK_TREE=$HOME git"
-
-alias nose="FH_SETTINGS_FILE=$HOME/nosetests.cfg scripts/nosetests.py"
+alias fhenv=". ~/fh/bin/activate"
+alias nosetests='FH_SETTINGS_FILE=~/nosetests.cfg nosetests'
+alias lettuce='FH_SETTINGS_FILE=~/nosetests.cfg python -m integration.scripts.lettuce_tests'
+alias kauth='kinit -l 1d dj@THE.FLATIRON.COM'
+alias start_postgres='pg_ctl -D /usr/local/var/postgres start'
