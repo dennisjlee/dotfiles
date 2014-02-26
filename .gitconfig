@@ -14,6 +14,7 @@
   tool = gvimdiff
   summary = true
   conflictstyle = diff3
+  ff = true
 [url "djlee@git.spotify.net"]
   insteadof = git@git.spotify.net
 [alias]

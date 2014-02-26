@@ -42,7 +42,7 @@ alias la='ls -A'
 alias lsf="find . -maxdepth 1 -type f -printf '%P\0' | xargs -0 ls"
 alias lsd="find . -maxdepth 1 -type d -printf '%P\0' | xargs -0 ls -d"
 
-alias ducks='find . -maxdepth 1 -mindepth 1 -print0 | xargs -0i du -ks {} | sort -rn | head -n 20 | cut -f 2 | zero | xargs -0i du -hs {}'
+alias ducks='find . -maxdepth 1 -mindepth 1 -print0 | xargs -0 -- du -ks  | sort -rn | head -n 20 | cut -f 2 | zero | xargs -0 -- du -hs'
 
 unset IS_MAC
 
