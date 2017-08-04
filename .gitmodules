@@ -22,9 +22,6 @@
 [submodule ".vim/bundle/vim-repeat"]
 	path = .vim/bundle/vim-repeat
 	url = git://github.com/tpope/vim-repeat.git
-[submodule ".vim/bundle/nerdtree"]
-	path = .vim/pack/myplugins/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
 [submodule ".vim/bundle/command-t"]
 	path = .vim/bundle/command-t
 	url = git://git.wincent.com/command-t.git
@@ -34,3 +31,9 @@
 [submodule ".vim/bundle/vim-eunuch"]
 	path = .vim/bundle/vim-eunuch
 	url = git://github.com/tpope/vim-eunuch.git
+[submodule ".vim/pack/myplugins/start/vim-colors-solarized"]
+	path = .vim/pack/myplugins/start/vim-colors-solarized
+	url = git://github.com/altercation/vim-colors-solarized.git
+[submodule ".vim/pack/myplugins/start/nerdtree"]
+	path = .vim/pack/myplugins/start/nerdtree
+	url = git://github.com/scrooloose/nerdtree.git
