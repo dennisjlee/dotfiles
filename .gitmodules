@@ -1,9 +1,6 @@
 [submodule ".vim/bundle/asciidoc.vim"]
 	path = .vim/bundle/asciidoc.vim
 	url = git://github.com/framallo/asciidoc.vim.git
-[submodule ".vim/bundle/vim-colors-solarized"]
-	path = .vim/bundle/vim-colors-solarized
-	url = git://github.com/altercation/vim-colors-solarized.git
 [submodule ".vim/bundle/vim-commentary"]
 	path = .vim/bundle/vim-commentary
 	url = git://github.com/tpope/vim-commentary.git
@@ -26,7 +23,7 @@
 	path = .vim/bundle/vim-repeat
 	url = git://github.com/tpope/vim-repeat.git
 [submodule ".vim/bundle/nerdtree"]
-	path = .vim/bundle/nerdtree
+	path = .vim/pack/myplugins/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
 [submodule ".vim/bundle/command-t"]
 	path = .vim/bundle/command-t
