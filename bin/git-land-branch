@@ -1,0 +1,23 @@
+#!/bin/bash
+
+set -e
+
+REMOTE=${1-master}
+
+BRANCH=$(git rev-parse --abbrev-ref HEAD)
+
+if [ ${BRANCH} == ${REMOTE} ] ; then
+  echo "Don't use git land-branch when already on ${REMOTE}! simply push instead"
+  exit 1
+fi
+echo Landing $BRANCH onto $REMOTE
+git fetch origin
+git rebase origin/${REMOTE}
+git push origin HEAD:${REMOTE}
+git checkout ${REMOTE}
+git rebase
+if git show-ref --verify refs/remotes/origin/${BRANCH} >/dev/null; then
+  # Delete remote branch if it exists
+  git push origin :${BRANCH}
+fi
+git branch -d ${BRANCH}

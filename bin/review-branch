@@ -1,0 +1,33 @@
+#!/bin/bash -e
+# Usage: run `review-branch` without arguments to send multiple Phabricator
+# diffs based on each commit on a branch that is not present on origin/master.
+# Specify an argument to use a different remote branch 
+# (e.g. `review-branch my-branch`)
+
+REMOTE_BRANCH=${1-master}
+
+BRANCH=$(git rev-parse --abbrev-ref HEAD)
+if [ ${BRANCH} == ${REMOTE_BRANCH} ] ; then
+  echo "review-branch is not supported while on the same branch as the remote branch (${REMOTE_BRANCH})"
+  exit 1
+fi
+
+git fetch origin
+git rebase origin/${REMOTE_BRANCH}
+
+FIRST_COMMIT=$(git log --oneline --reverse origin/${REMOTE_BRANCH}..HEAD | cut -d' ' -f1 | head -n1)
+OTHER_COMMITS=$(git log --oneline --reverse origin/${REMOTE_BRANCH}..HEAD | cut -d' ' -f1 | tail -n +2)
+
+i=1
+git checkout -b ${BRANCH}_review${i} ${FIRST_COMMIT}
+arc diff origin/${REMOTE_BRANCH}
+
+for commit in ${OTHER_COMMITS}; do
+  echo -n "Diff sent - hit Enter to continue, or ^C to stop.. "
+  read
+
+  let i++
+  git checkout -b ${BRANCH}_review${i}
+  git cherry-pick ${commit}
+  arc diff HEAD^
+done
