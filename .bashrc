@@ -91,7 +91,7 @@ if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
 
-if which brew >/dev/null; then
+if which brew &>/dev/null; then
     if [ -f `brew --prefix`/etc/autojump.bash ]; then
         . `brew --prefix`/etc/autojump.bash
     fi

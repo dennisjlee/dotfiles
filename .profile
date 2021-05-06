@@ -17,3 +17,5 @@ if [ -d ~/.node-completion ] ; then
   done
 fi
 # }}}
+
+cd ~
