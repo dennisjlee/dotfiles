@@ -43,9 +43,9 @@
 [submodule ".vim/bundle/nerdtree"]
 	path = .vim/bundle/nerdtree
 	url = git://github.com/scrooloose/nerdtree.git
-[submodule ".vim/bundle/--depth"]
-	path = .vim/bundle/--depth
-	url = git@github.com:leafOfTree/vim-svelte-plugin
 [submodule ".vim/bundle/vim-svelte-plugin"]
 	path = .vim/bundle/vim-svelte-plugin
 	url = git@github.com:leafOfTree/vim-svelte-plugin
+[submodule ".vim/pack/myplugins/start/vim-svelte-plugin"]
+	path = .vim/pack/myplugins/start/vim-svelte-plugin
+	url = git@github.com:leafOfTree/vim-svelte-plugin.git

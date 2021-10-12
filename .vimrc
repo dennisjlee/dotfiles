@@ -255,3 +255,5 @@ augroup myvimrc
     au!
     au BufWritePost .vimrc,_vimrc,vimrc so $MYVIMRC
 augroup END
+
+let g:vim_svelte_plugin_use_typescript = 1
